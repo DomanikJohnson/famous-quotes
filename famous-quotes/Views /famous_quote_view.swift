@@ -12,38 +12,54 @@ struct famous_quote_view: View {
     @ObservedObject var model = QuotesModel()
     
     var body: some View {
- 
+        NavigationView {
         ScrollView {
-            ForEach(model.quotes) { quote in
-                
-                VStack{
-                    ZStack{
-                        Image(quote.image)
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 300, height: 280, alignment: .center)
-                           .clipped()
-                        .cornerRadius(10)
-                        VStack(alignment: .leading){
+          
+                   
+                    ForEach(model.quotes) { quote in
+                        NavigationLink(
+                            destination: /*@START_MENU_TOKEN@*/Text("Destination")/*@END_MENU_TOKEN@*/,
+                            label: {
+                        VStack{
+                            ZStack{
+                                Image(quote.image)
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 300, height: 280, alignment: .center)
+                                   .clipped()
+                                .cornerRadius(10)
+                                VStack(alignment: .leading){
 
-                        Text(quote.quote)
-                            .font(.title2)
-                            .fontWeight(.bold)
-                            .multilineTextAlignment(.leading)
-                            .foregroundColor(.white)
-                            .frame(width: 250)
-                        
-                            Text("- " + quote.name )
-                                .font(.subheadline)
-                                .fontWeight(.semibold)
-                                .foregroundColor(Color.white)
-                                .multilineTextAlignment(.leading)
-                                .padding(.top)
+                                Text(quote.quote)
+                                    .font(.title2)
+                                    .fontWeight(.bold)
+                                    .multilineTextAlignment(.leading)
+                                    .foregroundColor(.white)
+                                    .frame(width: 250)
+                                
+                                    Text("- " + quote.name )
+                                        .font(.subheadline)
+                                        .fontWeight(.semibold)
+                                        .foregroundColor(Color.white)
+                                        .multilineTextAlignment(.leading)
+                                        .padding(.top)
+                                }
+                            }
                         }
-                    }
-                }
+                        .padding(.bottom)
+                        
+                    })
+                    
+                    
+                    
+                    
+                    
+                    
+               
                 
             }
+       
+        }.navigationBarTitle("Quotes")
         }
 //
 //                List(model.quotes) { q in
@@ -75,10 +91,11 @@ struct famous_quote_view: View {
             
            
     }
-}
+
 
 struct famous_quote_Previews: PreviewProvider {
     static var previews: some View {
         famous_quote_view()
     }
+}
 }
