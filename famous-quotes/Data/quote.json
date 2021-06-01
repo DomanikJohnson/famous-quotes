@@ -1,8 +1,70 @@
-[
-{
-  "name":
-  "quote":
-  "quotes":
-    
-}
+[{
+    "id": 0,
+        "name": "Albert Einstein",
+        "quote": "If you want to live a happy life, tie it to a goal, not to people or things.",
+        "quotes": [
+            "Throughout life people will make you mad, disrespect you and treat you bad. Let God deal with the things they do, cause hate in your heart will consume you too.",
+            "      I don't know what my calling is, but I want to be here for a bigger reason. I strive to be like the greatest people who have ever lived.",
+            "  Too many people spend money they haven't earned, to buy things they don't want, to impress people they don't like. You can cry, ain't no shame in it.",
+            "If it was something that I really committed myself to, I don't think there's anything that could stop me becoming President of the United States."
+        ],
+        "image": "ambition"
+    },
+    {
+        "id": 1,
+        "name": "Will Smith",
+        "quote": "Money and success don’t change people; they merely amplify what is already there.",
+        "quotes": ["Imagination is more important than knowledge.",
+            "Life is like riding a bicycle. To keep your balance you must keep moving.",
+            "Imagination is everything. It is the preview of life's coming attractions.",
+            "No problem can be solved from the same level of consciousness that created it.",
+            "If you can't explain it simply, you don't understand it well enough."
+        ],
+        "image": "calm"
+    },
+    {
+        
+        "id": 2,
+        "name": "Seneca",
+        "quote": "Not how long, but how well you have lived is the main thing.",
+        "quotes": [
+            "Imagination is more important than knowledge.",
+            "Life is like riding a bicycle. To keep your balance you must keep moving.",
+            "Imagination is everything. It is the preview of life's coming attractions.",
+            "No problem can be solved from the same level of consciousness that created it.",
+            "If you can't explain it simply, you don't understand it well enough."
+        ],
+        "image": "focus"
+    },
+    {
+      
+      
+      
+      "id": 3,
+        "name": "Henry Ford",
+        "quote": "The whole secret of a successful life is to find out what is one’s destiny to do, and then do it.",
+        "quotes": [
+            "Imagination is more important than knowledge.",
+            "Life is like riding a bicycle. To keep your balance you must keep moving.",
+            "Imagination is everything. It is the preview of life's coming attractions.",
+            "No problem can be solved from the same level of consciousness that created it.",
+            "If you can't explain it simply, you don't understand it well enough."
+        ],
+        "image": "reflect"
+    },
+    {
+        "id": 4,
+        "name": "Leo Burnett",
+        "quote": "Curiosity about life in all of its aspects, I think, is still the secret of great creative people",
+        "quotes": [
+            "Imagination is more important than knowledge.",
+            "Life is like riding a bicycle. To keep your balance you must keep moving.",
+            "Imagination is everything. It is the preview of life's coming attractions.",
+            "No problem can be solved from the same level of consciousness that created it.",
+            "If you can't explain it simply, you don't understand it well enough."
+        ],
+        "image": "reflect2"
+
+    }
+
 ]
