@@ -14,11 +14,9 @@ struct famous_quote_view: View {
     var body: some View {
         NavigationView {
         ScrollView {
-          
-                   
                     ForEach(model.quotes) { quote in
                         NavigationLink(
-                            destination: /*@START_MENU_TOKEN@*/Text("Destination")/*@END_MENU_TOKEN@*/,
+                            destination: QuoteDetailView(quote: quote),
                             label: {
                         VStack{
                             ZStack{
@@ -49,47 +47,10 @@ struct famous_quote_view: View {
                         .padding(.bottom)
                         
                     })
-                    
-                    
-                    
-                    
-                    
-                    
-               
-                
             }
        
         }.navigationBarTitle("Quotes")
         }
-//
-//                List(model.quotes) { q in
-//
-//                    VStack {
-//                        ZStack{
-//                            Image(q.image)
-//                                .resizable()
-//                                .scaledToFill()
-//                                .frame(width: 250, height: 250, alignment: .center)
-//                                .clipped()
-//                                .cornerRadius(10)
-//
-//                        }
-//                    }
-//
-//
-//
-////                    Text(String(q.id))
-////                    Text(q.name)
-////                    Text(q.quote)
-////                    ZStack{
-//
-////                    }
-//                }
-                
-                
-            
-            
-           
     }
 
 
